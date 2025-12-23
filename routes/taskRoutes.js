@@ -4,7 +4,7 @@ const {protect} = require('../middleware/authMiddleware');
 
 const router = express.Router();
 
-ruter.use(protect);
+router.use(protect);
 
 router.get('/stats',taskController.getStats); // Aggregation route
 
